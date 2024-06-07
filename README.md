@@ -6,6 +6,7 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+- 3.1.1
 
 * System dependencies
 
@@ -23,7 +24,7 @@ Things you may want to cover:
 
 * ...
 
-# Commands
+# Commands running locally
 - Install ElasticSearch
 
 docker run \
@@ -36,3 +37,6 @@ docker run \
 Reference:
 - 1: https://www.honeybadger.io/blog/rails-elasticsearch/
 - 2: https://viblo.asia/p/tich-hop-elastic-search-trong-ung-dung-rails-6BAMYk3Pvnjz
+
+# After run source 
+- rails db:seed 

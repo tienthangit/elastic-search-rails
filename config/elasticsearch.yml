@@ -1,0 +1,7 @@
+# config/elasticsearch.yml
+development: &default
+  host: 'http://elasticsearch:9200'
+test:
+  host: 'http://elasticsearch:9200'
+production:
+  host: 'http://www.yourelasticindex:9200'

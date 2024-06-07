@@ -17,11 +17,11 @@ class Song < ApplicationRecord
   end
 end
 
-# Song.__elasticsearch__.client.indices.delete index: Song.index_name rescue nil
+Song.__elasticsearch__.client.indices.delete index: Song.index_name rescue nil
 
-# # Create the new index with the new mapping
-# Song.__elasticsearch__.client.indices.create \
-#   index: Song.index_name,
-#   body: { settings: Song.settings.to_hash, mappings: Song.mappings.to_hash }
+# Create the new index with the new mapping
+Song.__elasticsearch__.client.indices.create \
+  index: Song.index_name,
+  body: { settings: Song.settings.to_hash, mappings: Song.mappings.to_hash }
 
-# Song.import
+Song.import

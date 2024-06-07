@@ -1,8 +1,8 @@
-<h1>Articles Search</h1>
+<h1>Pages Search</h1>
 
 <%= form_for search_path, method: :get do |f| %>
   <p>
-    <%= f.label "Search for" %>
+    <%= f.label "Search for article" %>
     <%= text_field_tag :q, params[:q] %>
     <%= submit_tag "Go", name: nil %>
   </p>

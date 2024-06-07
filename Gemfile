@@ -70,3 +70,4 @@ end
 
 gem 'elasticsearch-model'
 gem 'sass-rails', '~> 5.0'
+gem 'faker'
